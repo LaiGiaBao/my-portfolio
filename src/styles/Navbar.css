@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
 .navbar {
   width: 100%;
   height: 100px;
-  background: #21325e;
+  background: var(--color-primary);
+  letter-spacing: 2px;
+  font-family: "Dangrek", cursive;
 }
 
 .links {
@@ -18,6 +21,10 @@
   text-decoration: none;
   margin: 20px;
   font-size: 25px;
+  font-weight: 600;
+}
+.navbar a:hover {
+  transform: scale(1.03);
 }
 
 .toggleButton {

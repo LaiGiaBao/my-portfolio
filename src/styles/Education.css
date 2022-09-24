@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
+.experience {
+  background-color: var(--color-body);
+  font-family: "Dangrek", cursive;
+}
+.experience__header {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+.date__title {
+  color: #fff;
+  opacity: 1;
+}

@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
+:root {
+  --color-primary: #7209b7;
+  --color-heading: #f72585;
+  --color-body: #3a0ca3;
+}
 .home {
   width: 100%;
   align-items: center;
-  font-family: "Arial", sans-serif;
+  font-family: "Dangrek", cursive;
   color: #3e497a;
 }
 
@@ -13,15 +19,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
+  background-color: var(--color-primary);
   color: #f0f0f0;
 }
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
-  color: #e9d35b;
+  color: #f7fd04;
   height: 50px;
+  text-shadow: 5px 3px #ff0000;
 }
 
 .about .prompt {
@@ -37,25 +44,52 @@
 .skills {
   font-size: 35px;
   width: 100%;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .skills h1 {
+  margin-bottom: 0;
+  text-align: center;
   color: #3e497a;
+  height: 7rem;
 }
 
 .skills .list {
   list-style: none;
   width: 60%;
 }
+.skills h2 {
+  font-size: 35px;
+}
 
 .list span {
   font-size: 20px;
 }
+.list {
+  justify-self: center;
+  padding: 2rem 3rem;
+}
+.list h2 {
+  text-align: center;
+}
+.grid {
+  display: grid;
+}
+.list .item {
+  text-align: center;
+  height: 3rem;
+}
+.skills__header {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
+@media screen and (min-width: 1024px) {
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media only screen and (max-width: 600px) {
   .about h2 {
     font-size: 40px;
@@ -78,3 +112,19 @@
     font-size: 30px;
   }
 }
+/* Cards */
+.card {
+  border: 1px solid #888888;
+  border-radius: 7px;
+  box-shadow: 5px 10px #888888;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+  max-width: 300px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.list .item:hover {
+  color: #4109c3;
+}
+/* Email */
